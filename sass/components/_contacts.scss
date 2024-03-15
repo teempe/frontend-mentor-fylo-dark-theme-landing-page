@@ -1,0 +1,45 @@
+.contacts {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.6rem;
+
+    &__link {
+        text-decoration: none;
+        color: inherit;
+
+        display: flex;
+        align-items: flex-start;
+        column-gap: 1.6rem;
+                    
+        &::before {
+            content: "";
+            width: 2.4rem;
+            height: 2.4rem;
+            display: inline-block;
+            flex: 0 0 auto;
+        }
+            
+        &--loc {
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+
+            &::before {
+                background: no-repeat center url('../images/icon-location.svg');
+                padding-top: 0.8rem;
+            }
+        }
+    
+        &--tel {
+            &::before {
+                background: no-repeat center url('../images/icon-phone.svg');
+            }
+        }
+        
+        &--mail {
+            &::before {
+                background: no-repeat center url('../images/icon-email.svg');
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.cta-section {
+    background-color: var(--color-intro-bg);
+    border-radius: 0.9rem;
+    padding: 4rem 2.8rem 3.7rem;
+    margin: 0rem 1.95rem;
+
+    display: grid;
+    row-gap: 3.2rem;
+
+    position: absolute;
+    bottom: -17.6rem;
+
+    &__header {
+        text-align: center;
+    }
+
+    &__heading {
+        margin-bottom: 1.6rem;
+    }
+}

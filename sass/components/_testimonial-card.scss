@@ -1,0 +1,45 @@
+.testimonial-card {
+    width: 100%;
+    padding: 2.4rem 2rem 2.1rem;
+    background-color: var(--testimonials-bg);
+    border-radius: 0.4rem;
+
+    font-size: 1rem;
+    line-height: 1.8rem;
+
+    display: grid;
+    row-gap: 1.7rem;
+    
+    &__profile {
+        display: grid;
+
+        grid-template-columns: repeat(2, max-content);
+        grid-template-areas: 
+            "avatar name"
+            "avatar title";
+        
+        row-gap: 0.4rem;
+        column-gap: 0.8rem;
+
+        &-image {
+            grid-area: avatar;
+            width: 2.4rem;
+            height: 2.4rem;
+            border-radius: 50%;
+        }
+
+        &-name {
+            grid-area: name;
+            font-weight: var(--fw-bold);
+            line-height: 1.2rem;
+            letter-spacing: 0.05rem;
+        }
+
+        &-title {
+            grid-area: title;
+            font-size: 0.8rem;
+            line-height: 1rem;
+            letter-spacing: 0.06rem;
+        }
+    }
+}

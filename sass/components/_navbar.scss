@@ -1,0 +1,21 @@
+.navbar {
+
+    .navlinks {
+        list-style-type: none;
+        display: flex;
+        column-gap: 2.4rem;
+    }
+
+    .navlink {
+        text-decoration: none;
+        font-family: var(--ff-heading);
+        font-size: 1.2rem;
+        line-height: normal;
+        color: inherit;
+
+        &:hover {
+            text-decoration: underline;
+            font-weight: var(--fw-bold);
+        }
+    }
+}

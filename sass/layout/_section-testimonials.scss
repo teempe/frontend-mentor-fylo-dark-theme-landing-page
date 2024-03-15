@@ -1,0 +1,21 @@
+.testimonials-section {
+    padding: 16.9rem 4.8rem 33.7rem 4.8rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.4rem;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 3.2rem;
+        height: 2.6rem;
+
+        background: url('../../images/bg-quotes.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+        position: absolute;
+        top: calc(16.9rem - 2.6rem);
+        left: calc(4.8rem + 0.4rem);
+    }
+}

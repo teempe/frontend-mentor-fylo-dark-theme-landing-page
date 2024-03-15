@@ -4,11 +4,19 @@
     --color-footer-bg: #0B1524;
     --testimonials-bg: #202A3C;
     --color-btn-bg: linear-gradient(135deg, #63E1D9, #34A0CD);
+    --color-btn-bg-active: #8ADAE3;
+    --color-btn-secondary: #62E0D9;
     --color-red: #FF4242;
     --color-white: #FFFFFF;
     --color-form-text-placeholder: #C0C0C0;
     --color-form-text-active: #07043B;
     --color-social-icon: #DFE4F0;
+
+    --ff-body: "Open Sans", sans-serif;
+    --ff-heading: "Raleway", sans-serif;
+    
+    --fw-regular: 400;
+    --fw-bold: 700;
 }
 
 * {
@@ -27,6 +35,8 @@ html {
 }
 
 body {
+    background-color: var(--color-intro-bg);
+    
     // center content on page
     display: grid;
     place-content: center;

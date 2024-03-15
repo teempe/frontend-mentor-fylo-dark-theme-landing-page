@@ -1,0 +1,33 @@
+body {
+    font-family: var(--ff-body);
+    font-optical-sizing: auto;
+    font-weight: var(--fw-regular);
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: var(--color-white);
+}
+
+.heading {
+    font-family: var(--ff-heading);
+    font-optical-sizing: auto;
+    font-weight: var(--fw-bold);
+    font-style: normal;
+
+    &--1 {
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+    }
+
+    &--2 {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+
+    &--3 {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+}
