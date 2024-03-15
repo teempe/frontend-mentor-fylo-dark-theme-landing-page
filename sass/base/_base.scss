@@ -1,0 +1,34 @@
+:root {
+    --color-intro-bg: #1B2330;
+    --color-main-bg: #181F2B;
+    --color-footer-bg: #0B1524;
+    --testimonials-bg: #202A3C;
+    --color-btn-bg: linear-gradient(135deg, #63E1D9, #34A0CD);
+    --color-red: #FF4242;
+    --color-white: #FFFFFF;
+    --color-form-text-placeholder: #C0C0C0;
+    --color-form-text-active: #07043B;
+    --color-social-icon: #DFE4F0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    // center content on page
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
