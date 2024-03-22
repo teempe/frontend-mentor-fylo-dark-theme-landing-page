@@ -18,4 +18,15 @@
             font-weight: var(--fw-bold);
         }
     }
+
+    @media only screen and (min-width: $bp-desktop) {
+
+        .navlinks {
+            column-gap: 5.7rem;
+        }
+    
+        .navlink {
+            font-size: 1.6rem;
+        }
+    }
 }

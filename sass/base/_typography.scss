@@ -8,6 +8,11 @@ body {
     font-size: 1.4rem;
     line-height: 2.1rem;
     color: var(--color-white);
+
+    @media only screen and (min-width: $bp-desktop) {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+    }
 }
 
 .heading {
@@ -29,5 +34,23 @@ body {
     &--3 {
         font-size: 1.8rem;
         line-height: 2.4rem;
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+
+        &--1 {
+            font-size: 4rem;
+            line-height: 6rem;
+        }
+    
+        &--2 {
+            font-size: 4rem;
+            line-height: 5rem;
+        }
+    
+        &--3 {
+            font-size: 2rem;
+            line-height: normal;
+        }
     }
 }

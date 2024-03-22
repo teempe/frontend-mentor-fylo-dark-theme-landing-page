@@ -6,4 +6,9 @@
         width: 10.8rem;
         height: 3.1rem;
     }
+
+    @media only screen and (min-width: $bp-desktop) {
+        width: 17.6rem;
+        height: 5.2rem;
+    }
 }

@@ -16,6 +16,14 @@
     &:hover {
         background: var(--color-btn-bg-active);
     }
+
+    @media only screen and (min-width: $bp-desktop) {
+        width: 28rem;
+        height: 5.6rem;
+        border-radius: 2.8rem;
+
+        font-size: 1.6rem;
+    }
 }
 
 .btn-secondary {
@@ -48,5 +56,10 @@
             background: url('../images/icon-arrow-light.svg');
             background-size: contain;
         }
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+        font-size: 1.6rem;
+        padding-bottom: 0.4rem;
     }
 }

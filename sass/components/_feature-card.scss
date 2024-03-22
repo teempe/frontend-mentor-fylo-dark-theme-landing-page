@@ -17,4 +17,13 @@
     &__heading {
         margin-bottom: 0.8rem;
     }
+
+    @media only screen and (min-width: $bp-desktop) {
+        max-width: 35rem;
+        row-gap: 1.6rem;
+    
+        &__icon {
+            height: 10.3rem;
+        }
+    }
 }

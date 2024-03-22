@@ -4,15 +4,49 @@
     color: var(--color-white);
 
     display: grid;
+    grid-template-areas: 
+        "logo"
+        "contacts"
+        "links"
+        "socials";
     row-gap: 5.6rem;
 
     &__logo {
+        grid-area: logo;
         margin-bottom: -2.1rem;
     }
 
+    &__nav-contacts {
+        grid-area: contacts;
+    }
+
     &__nav-links {
+        grid-area: links;
         display: flex;
         flex-direction: column;
-        row-gap: 4.8rem;
+        gap: 4.8rem;
+    }
+
+    &__nav-socials {
+        grid-area: socials;
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+        padding: 16.9rem 8.1rem 5.3rem 12rem;
+        
+        grid-template-areas: 
+            "logo logo logo"
+            "contacts links socials";
+        row-gap: 5.2rem;
+        justify-content: space-between;
+    
+        &__logo {
+            margin-bottom: 0rem;
+        }
+    
+        &__nav-links {
+            flex-direction: row;
+            gap: 8rem;
+        }
     }
 }

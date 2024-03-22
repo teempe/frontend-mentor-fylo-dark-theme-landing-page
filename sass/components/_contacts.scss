@@ -1,8 +1,26 @@
 .contacts {
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.6rem;
+    
+    &__grid {
+        display: grid;
+        row-gap: 1.6rem;
+        grid-template-areas: 
+            "loc"
+            "tel"
+            "mail";
+
+        &-item-loc {
+            grid-area: loc;
+        }
+
+        &-item-tel {
+            grid-area: tel;
+        }
+
+        &-item-mail {
+            grid-area: mail;
+        }
+    }
 
     &__link {
         text-decoration: none;
@@ -40,6 +58,18 @@
             &::before {
                 background: no-repeat center url('../images/icon-email.svg');
             }
+        }
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+
+        &__grid {
+            grid-template-areas: 
+                "loc tel"
+                "loc mail";
+            
+            grid-template-columns: 37.5rem max-content;
+            column-gap: 8rem;
         }
     }
 }

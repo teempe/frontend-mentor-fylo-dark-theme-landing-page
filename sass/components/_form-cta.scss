@@ -4,7 +4,7 @@
 
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, 4.8rem);
-    row-gap: 2.4rem;
+    gap: 2.4rem;
 
     &__input {
         font-family: inherit;
@@ -43,6 +43,24 @@
             position: absolute;
             top: 5.3rem;
             left: 3.8rem;
+        }
+    }
+
+    @media only screen and (min-width: $bp-desktop) {
+        grid-template-columns: 48rem 20rem;
+        grid-template-rows: 4.8rem;
+        gap: 2.9rem;
+
+        &__input {
+            padding-left: 3.8rem;
+
+            &::placeholder {
+                font-size: 1.2rem;
+            }
+        }
+
+        &__btn {
+            font-size: 1.4rem;
         }
     }
 }

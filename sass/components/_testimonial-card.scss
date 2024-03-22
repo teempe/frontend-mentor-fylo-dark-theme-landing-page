@@ -42,4 +42,21 @@
             letter-spacing: 0.06rem;
         }
     }
+
+    @media only screen and (min-width: $bp-desktop) {
+        padding: 4rem 2.6rem 2.6rem;
+
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+        letter-spacing: 0.05rem;
+
+        row-gap: 2.4rem;
+        
+        &__profile {
+            &-name {
+                font-size: 1rem;
+                line-height: 1.2rem;
+            }
+        }
+    }
 }
